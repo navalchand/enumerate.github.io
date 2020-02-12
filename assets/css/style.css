@@ -3,7 +3,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+a {
+    color:  #ffffff;
+    text-decoration: none;
+  }
+  a:hover,
 
+  a:focus {
+    color:  #dbdbdb;
+    text-decoration: underline;
+  }
 .header-right {
     display: none;
 }
@@ -14,7 +23,7 @@ body {
 }
 
 .navbar-item:hover {
-    color: #58d5f7;
+    color: #dbdbdb;
     text-decoration: none;
 }
 
@@ -407,7 +416,7 @@ ul {
 }
 
 .blue-section {
-    background-color: #0ABCEB;
+    background-color: #6967a0;
     color: white;
     margin: auto;
     text-align: center;
