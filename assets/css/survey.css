@@ -4,8 +4,8 @@ body {
 
 .front-first {
   background-color: #EBF5FF;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 28%;
+  border-bottom-right-radius: 28%;
 }
 
 .front-last {
@@ -75,6 +75,7 @@ body {
 .brand-name {
   font-size: large;
   color: #292F35;
+  text-align: center;
 }
 
 .phone-box {
@@ -110,6 +111,7 @@ h1 {
 }
 
 .input-entry {
+  width: 70%;
   border: none;
   color: #8A949F;
   font-size: small;
