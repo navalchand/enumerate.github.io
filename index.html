@@ -56,23 +56,32 @@
           <div class="col-6 col-sm-6 mb-4">
             <div class="box selected orange-border py-4 px-5" data-name="content-1">        
               <div class="box-title mb-4">
-                Find Insights based True Emotions and Testimonials of Customers 
+                Expression Based Insights 
               </div>
-              <div class="box-description mb-5 d-none d-sm-block">
-                
-              </div>
+              <!-- <div class="box-description mb-5 d-none d-sm-block">
+              </div> -->
             </div>
           </div>
           <div class="col-6 col-sm-6 mb-4">
-            <div class="box green-border py-4 px-5" data-name="content-2">
-              <ul>
-                <li>Easy User friendly Panelist Mobile and Web App</li>
-                <li>Create and Manage your Video Survey at one place</li>
-                <li>Automated Dashboard using AI</li>
-              </ul>
+            <div class="box selected green-border py-4 px-5" data-name="content-2">
+              <div class="box-title mb-4">
+                Ease of Use 
               </div>
+              <!-- <div class="box-description mb-5 d-none d-sm-block">
+                <ul>
+                  <li>Easy User friendly Panelist Mobile and Web App</li>
+                  <li>Create and Manage your Video Survey at one place</li>
+                  <li>Automated Dashboard using AI</li>
+                </ul>
+              </div> -->
             </div>
           </div>
+          <!-- <div id="content-1" class="col-12 col-sm-12 box-content my-5 text-center">
+            <div class="box-description">Content to be placed based on selection</div>
+          </div>
+          <div id="content-2" class="col-12 col-sm-12 box-content my-5 text-center" style="display: none;">
+            <div class="box-description">Content to be dhdksdk based on selection</div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -111,14 +120,14 @@
             Respond to the survey
           </div>
           <div class="d-block content-description">
-            <ui>
+            <ul>
               <li>Video surveys are easier to respond to and faster to answer</li>
               <li>Respond in your own confort zone without hassle of travelling</li>
               <li>Reduce response time of survey by atleast 50 percent</li>
               <li>Give answers as effective as face to face interviews</li>
               <li>Simply use Browser or Mobile to give Response</li>
               <li>No registration, no special tech and nothing to download</li>
-            </ui>
+            </ul>
           </div>
         </div>
       </div>
@@ -212,14 +221,14 @@
 
       gtag('config', 'AW-966483982');
 
-      $('.box').click(function(e) {
-        $('.box.selected').removeClass('selected');
-        $(this).addClass('selected');
-        var id = $(this).attr('data-name');
-        console.log(id);
-        $('.box-content').hide();
-        $('#' + id).show();
-      });
+      // $('.box').click(function(e) {
+      //   $('.box.selected').removeClass('selected');
+      //   $(this).addClass('selected');
+      //   var id = $(this).attr('data-name');
+      //   console.log(id);
+      //   $('.box-content').hide();
+      //   $('#' + id).show();
+      // });
 
       $('.email-box').click(function(e) {
         $(window).scrollTop(0);
