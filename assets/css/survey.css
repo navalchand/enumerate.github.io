@@ -71,7 +71,16 @@ body {
     padding-right: 37%;
   }
 }
+/* <!-- TODO: remove --> */
+ul li {
+  list-style:none;
+  padding-top: 1%;
+}
 
+.hide-this {
+  display: none;
+}
+/* <!-- TODO: remove --> */
 .brand-name {
   font-size: large;
   color: #292F35;
