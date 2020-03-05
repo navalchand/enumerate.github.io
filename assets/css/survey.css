@@ -75,6 +75,7 @@ body {
 ul li {
   list-style:none;
   padding-top: 1%;
+  margin-left: -2%;
 }
 
 .hide-this {

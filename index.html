@@ -64,7 +64,7 @@
             </div>
           </div>
           <div class="col-6 col-sm-6 mb-4">
-            <!-- TODO: remove hide-this -->
+            
             <div class="box selected green-border py-4 px-5 hide-this" data-name="content-2">
               <div class="box-title mb-4">
                 Ease of Use 
@@ -241,14 +241,22 @@
       $('.call-action-button').click(function(e) {
         var email = $('input[name="email"]').val();
         if (email) {
-          $.post("https://formspree.io/mayjbyvd", {
-            email: email
-          }, function(data, status) {
-            // conversion tag
-            gtag('event', 'conversion', {'send_to': 'AW-966483982/BU18CMPV1MgBEI7A7cwD'});
+          try{
+            $.post("https://formspree.io/mayjbyvd", {
+              email: email
+            }, function(data, status) {
+              // conversion tag
+              gtag('event', 'conversion', {'send_to': 'AW-966483982/BU18CMPV1MgBEI7A7cwD'});
+              
+            });
+          }
+          catch(err) {
+            console.log(err)
+          }
+          finally {
             alert("Thank you for submitting the email");
-          });
-        }
+          }
+      }
       })
     </script>
   </body>
