@@ -35,11 +35,11 @@
               
               </div>
             </div> -->
-            <div class="input-box px-4 py-3">
+            <div class=" px-4 py-3">
               <div class="input-grp">
                 <!-- <span class="icon-env">@@</span> -->
-                <input type="email" name="email" class="input-entry" placeholder="Your Email Here" autocomplete="off">
-                <div class="call-action-button py-2 px-4">Contact Us</div>
+                <!-- <input type="email" name="email" class="input-entry" placeholder="Your Email Here" autocomplete="off"> -->
+                <div class="contact-btn btn btn-primary py-2 px-4">Contact Us</div>
               </div>
             </div>
           </div>
@@ -189,8 +189,9 @@
               <div class="col-12 mt-2">
                 <div class="closing-title">Email Us for More Details</div>
               </div>
-              <div class="col-12 mt-5 mb-5">
-                <div class="email-box px-5 py-2">Contact Us</div>
+              <div class="contact-div col-12 mt-5 mb-5">
+                <iframe class="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSemWc3oBwf3cxEQ1BW3Xlrh0hu7RL3SxUvh9QyxryI7Xznndw/viewform?embedded=true"
+                 width="640" height="1276" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               </div>
             </div>
           </div>
@@ -232,32 +233,33 @@
       //   $('#' + id).show();
       // });
 
-      $('.email-box').click(function(e) {
-        $(window).scrollTop(0);
-        $('input[name="email"]').focus();
+      $('.contact-btn').click(function(e) {
+        $([document.documentElement, document.body]).animate({
+        scrollTop: $(".contact-div").offset().top
+        }, 2000);
+        // $('.contact-div').focus();
         return false;
       });
 
-      $('.call-action-button').click(function(e) {
-        var email = $('input[name="email"]').val();
-        if (email) {
-          try{
-            $.post("https://formspree.io/mayjbyvd", {
-              email: email
-            }, function(data, status) {
-              // conversion tag
-              gtag('event', 'conversion', {'send_to': 'AW-966483982/BU18CMPV1MgBEI7A7cwD'});
-              
-            });
-          }
-          catch(err) {
-            console.log(err)
-          }
-          finally {
-            alert("Thank you for submitting the email");
-          }
-      }
-      })
+      // $('.call-action-button').click(function(e) {
+      //   var email = $('input[name="email"]').val();
+      //   if (email) {
+      //     try{
+      //       $.post("https://formspree.io/mayjbyvd", {
+      //         email: email
+      //       }, function(data, status) {
+      //         // conversion tag
+      //         gtag('event', 'conversion', {'send_to': 'AW-966483982/BU18CMPV1MgBEI7A7cwD'});        
+      //       });
+      //     }
+      //     catch(err) {
+      //       console.log(err)
+      //     }
+      //     finally {
+      //       alert("Thank you for submitting the email");
+      //     }
+      // }
+      // })
     </script>
   </body>
 </html>

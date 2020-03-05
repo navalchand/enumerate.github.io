@@ -511,3 +511,7 @@ ul {
     position: absolute;
     max-width: 1280px;
 }
+
+.contact-form {
+    width:640; height:1276;
+}
