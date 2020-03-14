@@ -629,8 +629,34 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
-
-  
+  <script>
+      var images = [];
+      var url = 'https://www.enumerate.ai'
+      console.log(url)
+      function preload() {
+          for (var i = 0; i < arguments.length; i++) {
+              images[i] = new Image();
+              images[i].src = preload.arguments[i];
+          }
+      }
+      //-- usage --//
+      preload(
+          url+"/images/main.svg",
+          url+"/images/facetoface.svg",
+          url+"/images/review.svg",
+          url+"/images/dashboard.png",
+          url+"/images/actionable.svg",
+          url+"/images/enage.png",
+          url+"/images/catalog.svg",
+          url+"/images/feedbacck.svg",
+          url+"/images/hotel.svg",
+          url+"/images/test.png",
+          url+"/images/ad.svg",
+          url+"/images/team1.svg",
+          url+"/images/contact.svg",
+          
+      )
+  </script>
   <script src="js/main.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-966483982"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159452518-1"></script>
